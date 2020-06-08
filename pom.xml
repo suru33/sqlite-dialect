@@ -3,10 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <name>SQLite Hibernate Dialect</name>
+    <url>https://github.com/suru33/sqlite-dialect</url>
+    <description>Hibernate dialect for SQLite</description>
+
     <groupId>io.github.suru33</groupId>
     <artifactId>sqlite-dialect</artifactId>
     <version>1.0</version>
-    <description>Hibernate dialect for SQLite</description>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
@@ -44,6 +47,13 @@
         </developer>
     </developers>
 
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
     <build>
         <plugins>
             <plugin>
@@ -51,8 +61,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
